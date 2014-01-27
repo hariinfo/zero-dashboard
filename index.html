@@ -14,6 +14,8 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.vertical-tabs.css">
+    
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
@@ -35,7 +37,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="#">Zero Commerce (Dashboard)</a>
+    <a class="navbar-brand" href="#">Zero Commerce [Dashboard]</a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -76,28 +78,70 @@
 </nav>
 
 <div class="container">
-        <div class="page-header">
+        <!--div class="page-header">
           <h1>Order Summary for the day <small> | Demo</small></h1>
           
-        </div>
+        </div-->
 
-        <div  class="col-sm-6">
-            <h3>Left Tabs</h3>
-            <hr/>
+        <div  class="col-sm-12">
+            <!--h3>Left Tabs</h3>
+            <hr/-->
             <div class="col-xs-3"> <!-- required for floating -->
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs tabs-left">
-                  <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-                  <li><a href="#profile" data-toggle="tab">Profile</a></li>
-                  <li><a href="#messages" data-toggle="tab">Messages</a></li>
-                  <li><a href="#settings" data-toggle="tab">Settings</a></li>
+                  <li class="active">
+                  <a href="#home" data-toggle="tab">Order Summary <span class="badge pull-right">42</span></a></li>
+                  <li><a href="#profile" data-toggle="tab">Order Analytics</a></li>
+                  <li><a href="#messages" data-toggle="tab">Order Demographics</a></li>
+                  <li><a href="#settings" data-toggle="tab">Reports</a></li>
+                  
                 </ul>
             </div>
 
             <div class="col-xs-9">
                 <!-- Tab panes -->
                 <div class="tab-content">
-                  <div class="tab-pane active" id="home">Home Tab.</div>
+                  
+                  <div class="tab-pane active" id="home">
+                    <div class="row">
+                      <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img data-src="holder.js/300x200" alt="...">
+                          <div class="caption">
+                            <h3>Mobile Order</h3>
+                            <p>...</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img data-src="holder.js/300x200" alt="...">
+                          <div class="caption">
+                            <h3>Desktop Order</h3>
+                            <p>...</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                          <img data-src="holder.js/300x200" alt="...">
+                          <div class="caption">
+                            <h3>GCC Order</h3>
+                            <p>...</p>
+                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      
+                  </div>
+
+                  </div>
                   <div class="tab-pane" id="profile">Profile Tab.</div>
                   <div class="tab-pane" id="messages">Messages Tab.</div>
                   <div class="tab-pane" id="settings">Settings Tab.</div>
@@ -108,11 +152,10 @@
 
         </div>
 
-        <div  class="col-sm-6">
+        <!--div  class="col-sm-6">
             <h3>Right Tabs</h3>
             <hr/>
             <div class="col-xs-9">
-                <!-- Tab panes -->
                 <div class="tab-content">
                   <div class="tab-pane active" id="home-r">Home Tab.</div>
                   <div class="tab-pane" id="profile-r">Profile Tab.</div>
@@ -121,8 +164,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-3"> <!-- required for floating -->
-                <!-- Nav tabs -->
+            <div class="col-xs-3">
                 <ul class="nav nav-tabs tabs-right">
                   <li class="active"><a href="#home-r" data-toggle="tab">Home</a></li>
                   <li><a href="#profile-r" data-toggle="tab">Profile</a></li>
@@ -130,7 +172,7 @@
                   <li><a href="#settings-r" data-toggle="tab">Settings</a></li>
                 </ul>
             </div>
-        </div>
+        </div-->
 
     </div>
 
@@ -145,6 +187,8 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+    
   </body>
 </html>
 
